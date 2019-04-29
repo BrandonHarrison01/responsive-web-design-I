@@ -71,13 +71,14 @@ body {
   
   header nav a {
 	color: gray;
-	margin: 50px 4%;
-	text-decoration: none;
+	margin: 10px 0;
+    text-decoration: none;
   }
   
   header nav {
-    width: 80%;
-    padding-left: 0;
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
   }
   
   header {
@@ -121,12 +122,11 @@ body {
   
   .content {
 	border-style: solid none solid none;
-	border-width: 1px;
+	border-width: 2px;
   }
   
   .center-content-header{
 	display: flex;
-	
   }
   
   section h2 {
@@ -136,11 +136,12 @@ body {
   
   .center-content {
     margin-bottom: 30px;
-	display: flex;
+    display: flex;
+    justify-content: space-between;
   }
   
   .center-content p {
-	width: 50%;
+	width: 48%;
   }
   
   .middle-img {
@@ -159,7 +160,12 @@ body {
   
   .bottom-content {
 	margin-bottom: 62px;
-	display: flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-content p {
+      width: 30%;
   }
   
   footer h2 {
@@ -184,12 +190,31 @@ body {
           display: none;
       }
 
+      header {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
       header nav {
-          width: 100%;
           order: 7;
+          width: 99%;
+          margin-top: 30px;
       }
 
-      header {
-          flex-direction: column;
+      .top-content {
+          height: 400px;
       }
+
+      article {
+          justify-content: center;
+      }
+
+      .bottom-content {
+          margin-bottom: 30px;
+      }
+  } 
+
+  @media (max-width: 500px) {
+      
   }
